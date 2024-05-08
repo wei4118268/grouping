@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>快速分组</title>
+</head>
+<script src="jquery-3.7.1.min.js" lang="javascript"></script>
+<script src="xlsx.js" lang="javascript"></script>
+<script src="fz.js" lang="javascript"></script>
+<style>
+    .center{
+        width: 900px;
+        height: 400px;
+        margin: 0 auto;
+        position: relative;
+        padding-top: 1px;
+    }
+    .show{
+        width: 160px;
+        height: 90px;
+        margin: 200px auto 0 auto;
+        background-image: url(images/upload.png);
+        background-size: 100% 100%;
+        background-position: 0 0;
+    }
+    .t1{
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: bolder;
+    }
+    .grouping{
+        width: 300px;
+        height: 200px;
+        display: none;
+        margin: 30px auto;
+    }
+    .t2{
+        width: 300px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: bolder;
+    }
+    .btn{
+        width: 200px;
+        height: 40px;
+        margin: 20px auto;
+        border-radius: 20px;
+        background-color: #f00;
+        text-align: center;
+        line-height: 40px;
+        font-size: 16px;
+        color: #fff;
+        box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.5);
+    }
+</style>
+<body>
+    <div class="center">
+        <input type="file" name="" id="upload_input" style="width: 1px;height: 1px;visibility: hidden;">
+        <div class="show" id="upload"></div>
+        <div class="t1">点击上传图标，上传excel文件</div>
+    </div>
+    <div class="grouping">
+        <div class="t2">文件读取完成，请点击进行分组</div>
+        <div class="btn">开始分组</div>
+    </div>
+</body>
+</html>
