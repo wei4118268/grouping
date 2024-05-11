@@ -33,6 +33,9 @@ $(document).ready(() => {
         result = group(excelArr);
 
         console.log(result);
+        result = shuffle(result);
+        console.log(result);
+        
 
         $('.t2').text('分组完成~等待下载excel文件')
 
@@ -155,7 +158,7 @@ function group(arr_arr){
             break;
         }
 
-        result.push([t1, t2]);
+        result.push(shuffle([t1, t2]));
     }
 
     if(longest.length > 0){
